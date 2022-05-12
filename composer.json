@@ -1,0 +1,29 @@
+{
+	"name": "vicdev82/playground_extension",
+	"description" : "TYPO3 Playground Extension",
+	"license": "GPL-2.0-or-later",
+
+   "authors": [
+        {
+        "name": "Victor Grande Escanciano",
+        "role": "Developer"
+        }
+    ],
+    "autoload": {
+       "psr-4": {
+          "Vicdev82\\PlaygroundExtension\\": "Classes/"
+       }
+    },
+    "require": {
+		"typo3/cms-core": "^11.0.0"
+    },
+
+   "replace": {
+    "vicdev82/playground_extension": "self.version"
+    },
+    "extra": {
+    "typo3/cms": {
+       "extension-key": "playground_extension"
+    }
+ }
+}
