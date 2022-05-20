@@ -1,17 +1,18 @@
 <?php
-defined('TYPO3') or die();
+defined('TYPO3') || die();
 
-call_user_func(function()
-{
-   $extensionKey = 'site_package';
+call_user_func(function () {
+    /**
+     * Extension key
+     */
+    $extensionKey = 'site_package';
 
-   /**
-    * Default TypoScript
-    */
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-      $extensionKey,
-      'setup',
-      'Site Package Static Template',
-      "@import 'EXT:site_package/Configuration/setup.typoscript'"
-   );
+    /**
+     * Add default TypoScript (constants and setup)
+     */
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+        $extensionKey,
+        'Configuration/TypoScript',
+        'Site Package'
+    );
 });
