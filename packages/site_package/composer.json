@@ -1,0 +1,32 @@
+{
+    "name": "vicdev82/site-package",
+    "type": "typo3-site-package",
+    "description": "Site package for my playground",
+    "authors": [
+            {
+                    "name": "Victor Manuel Grande Escanciano",
+                    "role": "Developer",
+                    "homepage": "https://github.com/vicdev82"
+            }
+    ],
+    "require": {
+            "typo3/cms-core": "^11.4",
+            "typo3/cms-fluid-styled-content": "^11.4"
+    },
+    "license": "MIT",
+    "keywords": [
+            "typo3",
+            "site package",
+            "documentation"
+    ],
+    "autoload": {
+            "psr-4": {
+                    "T3docs\\SitePackage\\": "Classes/"
+            }
+    },
+    "extra": {
+            "typo3/cms": {
+                    "extension-key": "site_package"
+            }
+    }
+}
