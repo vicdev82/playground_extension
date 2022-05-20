@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4201e56b6e62df4bda5555af8f0ad79",
+    "content-hash": "2806a7a4788a50f1db13aad7956da6d7",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6949,6 +6949,49 @@
             "time": "2021-11-12T10:06:45+00:00"
         },
         {
+            "name": "vicdev82/site-package",
+            "version": "dev-display_items_pagetree",
+            "dist": {
+                "type": "path",
+                "url": "./packages/site_package",
+                "reference": "92ef773072d0397c9f73ac201ee0c0986094a98c"
+            },
+            "require": {
+                "typo3/cms-core": "^11.4",
+                "typo3/cms-fluid-styled-content": "^11.4"
+            },
+            "type": "typo3-site-package",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "site_package"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "T3docs\\SitePackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Victor Manuel Grande Escanciano",
+                    "role": "Developer",
+                    "homepage": "https://github.com/vicdev82"
+                }
+            ],
+            "description": "Site package for my playground",
+            "keywords": [
+                "documentation",
+                "site package",
+                "typo3"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.10.0",
             "source": {
@@ -7010,7 +7053,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "vicdev82/site-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
@@ -7018,5 +7063,5 @@
     "platform-overrides": {
         "php": "7.4.1"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }
